@@ -1,0 +1,14 @@
+<p>The Table below show the new movie release</p>
+<section class="row">
+		<h2 class="text-center">Latest Movies</h2>
+			<div class="col-sm-12" ng-controller="NewmoviesCtrl">
+				<input border = "text" ng-model="test"/>
+					<table width = 120% id="table2">	
+						<tr ng-repeat = "x in movies | filter:test">
+							<td>{{x.id}}</td>
+							<td>{{x.title}}</td>
+							<td>{{x.year_of_release}}</td>
+						</tr>
+						</table>		
+			</div>
+</section>
